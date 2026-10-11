@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inovantur.com.br/sitemap.xml

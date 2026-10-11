@@ -1,0 +1,86 @@
+{
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/aluguel-de-vans-para-feiras-e-eventos-em-sao-paulo",
+      "destination": "/aluguel-de-vans-para-feiras-congressos-e-eventos-corporativos-em-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/locacao-de-vans-para-atendimento-corporativo-em-sao-paulo",
+      "destination": "/locacao-de-vans-para-atendimento-corporativo",
+      "permanent": true
+    },
+    {
+      "source": "/servico-de-embarque-e-desembarque-em-porto-de-santos-sp",
+      "destination": "/servico-de-embarque-e-desembarque-em-portos-de-sp",
+      "permanent": true
+    },
+    {
+      "source": "/locacao-vans-e-onibus-para-viagens-e-excursoes-em-sao-paulo",
+      "destination": "/locacao-de-micro-onibus-e-onibus-para-viagens-e-excursoes",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nos",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/contato",
+      "destination": "/#contato",
+      "permanent": false
+    },
+    {
+      "source": "/orcamentos",
+      "destination": "/#contato",
+      "permanent": false
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
